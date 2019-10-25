@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            *{
+               margin: 0;
+               padding: 0;
+           }
+           a{
+               text-decoration: none;
+               color: #8d8d8d;
+           }
+           ul{
+               list-style: none;
+           }
+           .footer-c{
+               position: relative;
+           }
+          .banner{
+              height: 770px;
+              background-color: #000000;
+          }
+           .banner .banner-c{
+               height:672px;
+               /* position: relative; */
+               background: url(../img/banner.png) no-repeat center;
+               background-size: 100%;
+           }
+           .banner .left{
+               position: absolute;
+               top: 360px;
+               left: 84px;
+               /* top: 430px;
+               left: 100px; */
+               width: 21px;
+               height: 22px;
+               background: url(../img/left.png) no-repeat left top;
+               background-size: 84%;
+           }
+           .banner .right{
+            position: absolute;
+               top: 360px;
+               right: 84px;
+               width: 21px;
+               height: 22px;
+               background: url(../img/right.png) no-repeat left top;
+               background-size: 84%;
+           }
+           .banner .ball{
+                width: 36px;
+               position: absolute;
+               left: 50%;
+               margin-left: -17px;
+               top: 638px;
+               
+               overflow: hidden;
+               /* background-color: red; */
+           }
+           .banner .ball-1{
+               float: left;
+                width: 9px;
+                height: 9px;
+                border: 1px solid black;
+                border-radius: 50%;
+           }
+           .banner .ball-1.active{
+               border-color: red;
+           }
+           .banner .ball-1:hover{
+               border: 1px solid red;
+           }
+           .banner .ball-2{
+               float: right;
+                width: 9px;
+                height: 9px;
+                border: 1px solid white;
+                border-radius: 50%;
+           }
+           .tips{
+               height: 77px;
+           }
+           .tips img{
+               float: left;
+               margin-top: 16px;
+               margin-left: 50px;
+           }
+           /* .tips {
+               width: 1200px;
+               height: 75px;
+             
+               margin: 0 auto;
+               background: #000000 url(../img/logo.png) no-repeat left top;
+               background-position: -5px 14px;
+           } */
+           .tips .nav{
+               float: right;
+               
+           }
+         
+           .tips .nav .nav-item.one{
+               margin-left: 32px;
+           }
+           .tips .nav .nav-item{
+               position: relative;
+               font-size: 16px;
+               float: left;
+              
+               line-height: 30px;
+               margin-right: 36px;
+               margin-top: 27px;
+           }
+           .tips .nav .nav-item span{
+               display: block;
+               height: 2px;
+               width: 64px;
+               background-color: #dd1717;
+               position: absolute;
+               left: 0;
+               top: 30px;
+               display: none;
+           }
+           .tips .nav .nav-item .shouye{
+               display: block;
+               height: 2px;
+               width: 32px;
+               background-color: #dd1717;
+               position: absolute;
+               right: 0;
+               top: 30px;
+               display: none;
+
+           }
+           .tips .nav .nav-item.two{
+              margin-right: 50px;
+           }
+           /* .tips .nav .nav-item.one span{
+               position: absolute;
+               left: -16px;
+               top: 30px;
+           } */
+           .tips .nav .nav-item:hover span{
+               display: block;
+           }
+           .tips .nav .nav-item:hover a{
+               color: #dd1717;
+           }
+           .tips .nav .nav-item.active span{
+               display: block;
+           }
+           .tips .nav .nav-item.active a{
+               color: #dd1717;
+           }
+    .content{
+       
+        background-color:#161616;
+       /* height: 821px; */
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .content .hair{
+        /* height: 100px;
+        width: 1500px; */
+        background-color: #161616;
+        overflow: hidden;
+        position: relative;
+
+    }
+    .content .hair p{
+        text-align: center;
+        
+    }
+    .content .hair .us{
+        font-size: 24px;
+        color: #dd1717;
+        line-height: 24px;
+        
+    }
+    .content .hair .cia{
+        font-size: 16px;
+        color: #7a7a7a;
+        margin-top: 14px;
+    }
+    .content .hair span{
+        display: block;
+        height: 2px;
+        width: 129px;
+        background-color: #dd1717;
+    }
+    .content .hair .red-1{
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        margin-left: -259px;
+    }
+    .content .hair .red-2{
+        position: absolute;
+        top: 8px;
+        right: 50%;
+        margin-right: -259px;
+    }
+    .content .hair-2{
+        height: 526px;
+        margin-top: 34px;
+    }
+    .content .hair-2 .pic-1{
+       height: 247px;
+        float: left;
+        width: 356px;
+        background: url(../img/p1.png) no-repeat center;
+        /* background-size: 100%; */
+        margin-right: 30px;
+    }
+   
+    .content .hair-2 .pic-2{
+        height: 247px;
+        float: left;
+        width: 356px;
+        background: url(../img/p2.png) no-repeat center;
+        /* background-size: 100%; */
+        margin-right: 30px;
+    }
+    .content .hair-2 .pic-3{
+        height: 247px;
+        float: left;
+        width: 356px;
+        background: url(../img/p3.png) no-repeat center;
+        /* background-size: 100%; */
+        margin-right: 30px;
+    }
+    .content .hair-2 .pic-3-box{
+        height: 205px;
+        width: 298px;
+        border: 1px solid red;
+        margin: 28px 20px;
+    }
+    .content .hair-2 .pic-3-box p{
+        text-align: center;
+        display: none;
+    }
+    .content .hair-2 .p-1{
+        font-size: 14px;
+        /* line-height: 30px; */
+        color: #cd1b14;
+        margin-top: 83px;
+        
+    }
+    .content .hair-2 .p-2{
+        font-size: 12px;
+        /* line-height: 30px; */
+        color: #737373;
+        font-style: 微软雅黑;
+        margin-top: 25px;
+
+    }
+    .content .hair-2 .pic-3.active p{
+       display: block;
+      
+    }
+
+    .content .hair-2 .pic-4{
+        height: 247px;
+        float: left;
+        width: 356px;
+        background: url(../img/p4.png) no-repeat center;
+        /* background-size: 100%; */
+        
+    }
+    .content .hair-2 .pic-5{
+        height: 247px;
+        float: left;
+        width: 356px;
+        background: url(../img/p5.png) no-repeat center;
+        /* background-size: 100%; */
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+    .content .hair-2 .pic-6{
+        height: 247px;
+        float: left;
+        width: 356px;
+        background: url(../img/p6.png) no-repeat center;
+        /* background-size: 100%; */
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+    .content .hair-2 .pic-7{
+        height: 247px;
+        float: left;
+        width: 356px;
+        background: url(../img/p7.png) no-repeat center;
+        /* background-size: 100%; */
+        margin-top: 30px;
+        margin-right: 30px;
+    }
+    .content .hair-2 .pic-8{
+        height: 247px;
+        float: left;
+        width: 356px;
+        background: url(../img/p8.png) no-repeat center;
+        /* background-size: 100%; */
+        margin-top: 30px;
+    }
+    .content .head{
+        overflow: hidden;
+       
+    
+        
+    }
+    /* 从这里开始正常的高度了比在缩略84% */
+    .content .head .head-01{
+        text-align: center;
+        line-height: 100px;
+        height: 100px;
+        background-color: #dd1717;
+        font-size: 18px;
+        color: #fff;
+        margin-top: 46px;
+    }
+    .content .head-02{
+        height: 1118px;
+    }
+    .content .head-02 p{
+        text-align: center;
+        
+    }
+    .content .head-02 .us{
+        font-size: 24px;
+        color: #dd1717;
+        line-height: 24px;
+        
+    }
+    .content .head-02 .cia{
+        font-size: 16px;
+        color: #7a7a7a;
+        margin-top: 14px;
+    }
+    .content .head-02 span{
+        display: block;
+        height: 2px;
+        width: 129px;
+        background-color: #dd1717;
+    }
+    .content .head-02 .red-1{
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        margin-left: -259px;
+    }
+    .content .head-02 .red-2{
+        position: absolute;
+        top: 8px;
+        right: 50%;
+        margin-right: -259px;
+    }
+    .content .head-02{
+        position: relative;
+        
+        background-color: pink;
+        overflow: hidden;
+    }
+    .content .head-02 .head-1{
+        margin-top: 115px;
+        background-color: green;
+        position: relative;
+    }
+    .content .head-02 .head-2{
+        float: left;
+        height: 648px;
+        width: 433px;
+        background-color: yellow;
+        position: absolute;
+        top: 80px;
+        left: 252px;
+        position: relative;
+    }
+    .content .head-02 .head-2 .head-2-1{
+        height: 306px;
+        width: 433px;
+      position: relative;
+    }
+   
+    .content .head-02 .head-2 .head-2-1 .head-2-1-1{
+       height: 302px;
+       background: url(../img/guoqing.png) no-repeat ;
+       background-size: 100%;
+       position: relative;
+
+    }
+    
+    .content .head-02 .head-2 .head-2-1 .head-2-1-2{
+      background-color: #221122;
+      width: 433px;
+      height: 40px;
+     position: absolute;
+     top: -80px;
+     position: relative;
+    
+
+    }
+    .content .head-2-1-2 .gqth{
+        color: #6f6f6f;
+        font-size: 14px;
+        line-height: 14px;
+        position: absolute;
+        top: 13px;
+    }
+    .content .head-2-1-2 .gqmoney{
+        color: #6f6f6f;
+        font-size: 18px;
+        position: absolute;
+        line-height: 18px;
+        top: 11px;
+        left: 50%;
+        margin-left: -40px;
+        }
+        .content .head-02 .head-2 .head-2-2{
+        height: 306px;
+        width: 433px;
+        margin-top: 80px;
+      position: relative;
+    }
+   
+    .content .head-02 .head-2 .head-2-2 .head-2-2-1{
+       height: 302px;
+       background: url(../img/guimi.png) no-repeat ;
+       background-size: 100%;
+       position: relative;
+
+    }
+    
+    .content .head-02 .head-2 .head-2-2 .head-2-2-2{
+      background-color: #221122;
+      width: 433px;
+      height: 40px;
+     position: absolute;
+     top: -80px;
+     position: relative;
+    
+
+    }
+    .content .head-2-2-2 .gqth{
+        color: #6f6f6f;
+        font-size: 14px;
+        line-height: 14px;
+        position: absolute;
+        top: 13px;
+    }
+    .content .head-2-2-2 .gqmoney{
+        color: #6f6f6f;
+        font-size: 18px;
+        position: absolute;
+        line-height: 18px;
+        top: 11px;
+        left: 50%;
+        margin-left: -40px;
+        }
+        .content .head-02 .head-3{
+            float: right;
+        height: 648px;
+        width: 433px;
+        background-color: yellow;
+        position: absolute;
+        top: 260px;
+        right: 252px;
+        position: relative;
+    }
+    .content .head-02 .head-3 .head-2-1{
+        height: 306px;
+        width: 433px;
+      position: relative;
+    }
+   
+    .content .head-02 .head-3 .head-3-1 .head-3-1-1{
+       height: 302px;
+       background: url(../img/qinglv.png) no-repeat;
+       background-size: 100%;
+       position: relative;
+
+    }
+    
+    .content .head-02 .head-3 .head-3-1 .head-3-1-2{
+      background-color: #221122;
+      width: 433px;
+      height: 40px;
+     position: absolute;
+     top: -80px;
+     position: relative;
+    
+
+    }
+    .content .head-3-1-2 .gqth{
+        color: #6f6f6f;
+        font-size: 14px;
+        line-height: 14px;
+        position: absolute;
+        top: 13px;
+    }
+    .content .head-3-1-2 .gqmoney{
+        color: #6f6f6f;
+        font-size: 18px;
+        position: absolute;
+        line-height: 18px;
+        top: 11px;
+        left: 50%;
+        margin-left: -40px;
+        }
+        .content .head-02 .head-3 .head-3-2{
+        height: 306px;
+        width: 433px;
+        margin-top: 80px;
+      position: relative;
+    }
+   
+    .content .head-02 .head-3 .head-3-2 .head-3-2-1{
+       height: 302px;
+       background: url(../img/geren.png) no-repeat ;
+       background-size: 100%;
+       position: relative;
+       
+
+    }
+    .content .head-02 .head-3 .head-3-2 .head-3-2-1.active{
+        border-left: 2px solid red;
+        border-top: 2px solid red;
+    }
+    
+    .content .head-02 .head-3 .head-3-2 .head-3-2-2{
+      background-color: #221122;
+      width: 433px;
+      height: 40px;
+     position: absolute;
+     top: -80px;
+     position: relative;
+    
+
+    }
+    .content .head-02 .head-3 .head-3-2 .head-3-2-2.active{
+        background-color: red;
+        
+    }
+    .content .head-3-2-2 .gqth.active{
+        color: #fff;
+    }
+    .content .head-3-2-2 .gqth{
+        color: #6f6f6f;
+        font-size: 14px;
+        line-height: 14px;
+        position: absolute;
+        top: 13px;
+    }
+    .content .head-3-2-2 .gqmoney{
+        color: #6f6f6f;
+        font-size: 18px;
+        position: absolute;
+        line-height: 18px;
+        top: 11px;
+        left: 50%;
+        margin-left: -40px;
+        }
+        .content .head-3-2-2 .gqmoney.active{
+            color: #fff;
+        }
+        .content .body{
+            height: 454px;
+            background-color: green;
+            margin-top: 96px;
+            background: url(../img/men.png) no-repeat center;
+            background-size: 100%;
+        }
+        .content .body-c{
+            height: 455px;
+            width: 1008px;
+            margin: 0 auto;
+            background-color: #fff;
+            position: relative;
+        }
+        .content .body p{
+        text-align: center;
+        
+    }
+    .content .body .us{
+        font-size: 24px;
+        color: #dd1717;
+        line-height: 24px;
+        padding-top: 77px;
+        
+    }
+    .content .body .cia{
+        font-size: 16px;
+        color: #7a7a7a;
+        margin-top: 14px;
+    }
+    .content .body span{
+        display: block;
+        height: 2px;
+        width: 129px;
+        background-color: #dd1717;
+    }
+    .content .body .red-1{
+        position: absolute;
+        top: 87px;
+        left: 50%;
+        margin-left: -217px;
+    }
+    .content .body .red-2{
+        position: absolute;
+        top: 87px;
+        right: 50%;
+        margin-right: -217px;
+    }
+    .content .body .logo{
+        position: absolute;
+        top: 175px;
+        left: 50%;
+        margin-left: -22.5px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background:red url(../img/yuanyuan.png) no-repeat center;
+        background-size: 100%;
+    }
+    .body .four .text-item{
+        width: 205px;
+        height: 72px;
+        line-height: 24px;
+        float:left;
+        margin-right: 62px;
+        margin-top: 135px;
+    }
+    .body .four .text-item.zero{
+        margin-right: 0;
+    }
+    
+    .body .four .camera{
+        height: 27px;
+        width: 27px;
+        background:red url(../imh/camera-icon.png);
+        background-size: 100%;
+        position: absolute;
+        left: 80px;
+        top: 214px;
+
+    }
+    .body .four .nature{
+        height: 27px;
+        width: 27px;
+        background:red url(../imh/nature-icon.png);
+        background-size: 100%;
+        position: absolute;
+        left: 365px;
+        top: 214px;
+
+    }
+    .body .four .world{
+        height: 27px;
+        width: 27px;
+        background:red url(../imh/world-icon.png);
+        background-size: 100%;
+        position: absolute;
+        right: 365px;
+        top: 214px;
+
+    }
+    .body .four .prize{
+        height: 27px;
+        width: 27px;
+        background:red url(../imh/prize-icon.png);
+        background-size: 100%;
+        position: absolute;
+        right: 80px;
+        top: 214px;
+
+    }
+    .foot-c{
+        position: relative;
+        width: 1008px;
+        margin: 0 auto;
+    }
+    .content .foot-c p{
+        text-align: center;
+        
+    }
+    .content .foot-c .us{
+        font-size: 24px;
+        color: #dd1717;
+        line-height: 24px;
+        
+    }
+    .content .foot-c .cia{
+        font-size: 16px;
+        color: #7a7a7a;
+        margin-top: 14px;
+    }
+    .content .foot-c span{
+        display: block;
+        height: 2px;
+        width: 129px;
+        background-color: #dd1717;
+    }
+    .content .foot-c .red-1{
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        margin-left: -259px;
+    }
+    .content .foot-c .red-2{
+        position: absolute;
+        top: 8px;
+        right: 50%;
+        margin-right: -259px;
+    }
+    .content .foot-c .foot-c-1{
+        margin-top: 78px;
+    }
+    .foot-c .box-item{
+        position: relative;
+        width: 143px;
+        height: 105px;
+        border: 1px solid red;
+        float: left;
+        margin-right: 17px;
+        margin-top: 35px;
+    }
+    .foot-c .box-item.left{
+        margin-left: 105px;
+    }
+    .foot-c .box-item.right{
+        margin-right: 105px;
+    }
+    .foot-c .box .one1{
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        margin-top: 24px;
+    }
+    .foot-c .box .one2{
+        font-size: 12px;
+        color: #fff;
+        line-height: 20px;
+    
+    }
+    .foot-c .box .two1{
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        margin-top: 24px;
+       
+    }
+    .foot-c .box .two2{
+        font-size: 12px;
+        color: #fff;
+        line-height: 20px;
+        padding: 0 10px;
+    
+    }
+    .foot-c .box .three1{
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        margin-top: 24px;
+       
+    }
+    .foot-c .box .three2{
+        font-size: 12px;
+        color: #fff;
+        line-height: 20px;
+        padding: 0 10px;
+    
+    }
+    .foot-c .box .four1{
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        margin-top: 24px;
+       
+    }
+    .foot-c .box .four2{
+        font-size: 12px;
+        color: #fff;
+        line-height: 20px;
+        padding: 0 10px;
+    
+    }
+    .foot-c .box .five1{
+        font-size: 16px;
+        color: #fff;
+        line-height: 24px;
+        margin-top: 24px;
+       
+    }
+    .foot-c .box .five2{
+        font-size: 12px;
+        color: #fff;
+        line-height: 20px;
+        padding: 0 10px;
+    
+    }
+    .sanjiao{
+        width: 0;
+        height: 0;
+        border: 10px solid;
+        border-color: transparent transparent gray transparent;
+        position: absolute;
+        left: 50%;
+        margin-left: -5px;
+        top: -17px;
+
+    }
+    .foot .water-item{
+        float: left;
+        width: 46px;
+        height: 50px;
+        margin-right: 117px;
+        background-color: #fff;
+        margin-top: 77px;
+        background: url(../img/one.png) no-repeat center;
+        background-size: 100%;
+        line-height: 50px;
+        text-align: center;
+        font-size: 24px;
+        color: #dd1717;
+    }
+    .foot .water-item.left{
+        margin-left: 163px;
+        
+    }
+    
+    
+    
+    
+    
+
+           .footer-c{
+        /* width: 1500px; */
+        height: 350px;
+        margin: 0 auto;
+        background-color: #000000;
+        overflow: hidden;
+    }
+    .footer-c .left{
+        
+        margin-top: 146px;
+        width: 193px;
+        height: 56px;
+        background-color: #000000;
+    }
+    .footer-c .left p{
+        font-size: 16px;
+        color: #545454;
+        /* line-height: 36px; */
+        margin-top: 146px;
+        margin-left: 1px;
+    }
+    .footer-c .left .nav-item{
+        float: left;
+        margin-right: 22px;
+        margin-top: 12px;
+    }
+    .footer-c .left .nav-item.three{
+        margin-left: 3px;
+    }
+    .footer-c .center,
+    .footer-c .right p{
+        font-size: 14px;
+        line-height: 36px;
+        color: #545454;
+    }
+    .footer-c .center{
+        height: 108px;
+        width: 235px;
+        position: absolute;
+        top: 130px;
+        left: 480px;
+    }
+    .footer-c .right{
+        height: 108px;
+        width: 182px;
+        position: absolute;
+        top: 130px;
+        right: 0px; 
+    }
+   .last{
+        height: 76px;
+        background-color: #1f1f1f;
+       
+    }
+    .last p{
+        color: #545454;
+        text-align: center;
+        line-height: 76px;
+        font-size: 12px;
+    }
+  
+    
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-c">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="ball">
+            <div class="ball-1 active"></div>
+            <div class="ball-2"></div>
+            </div>
+            <div class="tips">
+                        <img src="../img/logo.png" alt="">
+                        <div class="find">
+                            <ul class="nav">
+                                <li class="nav-item  active one"><a href="">首页</a>
+                                    <span class="shouye"></span>
+                                </li>
+                                <li class="nav-item"><a href="">样片大宴</a>
+                                    <span></span>
+                                </li>
+                                <li class="nav-item"><a href="">当季优惠</a>
+                                    <span></span>
+                                </li>
+                                <li class="nav-item"><a href="">旅拍城市</a>
+                                    <span></span>
+                                </li>
+                                <li class="nav-item"><a href="">关于我们</a>
+                                    <span></span>
+                                </li>
+                                <li class="nav-item two"><a href="">联系我们</a>
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+        </div> 
+        
+    </div>
+      
+        <div class="content">
+            <div class="hair">
+                    <div class="hair-1">
+                            <span class="red-1"></span>
+                            <span class="red-2"></span>
+                            <p class="us">Exhibittion of works</p>
+                            <p class="cia">作品展示</p>
+                    </div>
+                    <div class="hair-2">
+                        <div class="pic-1">
+                            
+                        </div>
+                        <div class="pic-2"></div>
+                        <div class="pic-3 active">
+                                <div class="pic-3-box">
+                                        <p class="p-1">Xiao Ru & Grady</p>
+                                        <p class="p-2">2018.6.25</p>
+                                    </div>
+                        </div>
+                        <div class="pic-4"></div>
+                        <div class="pic-5"></div>
+                        <div class="pic-6"></div>
+                        <div class="pic-7"></div>
+                        <div class="pic-8"></div>
+                    </div>
+            </div>
+            <div class="head">
+                <div class="head-01">
+                    VIEW MORE
+                </div>
+               
+                <div class="head-02">
+                        <div class="head-1">
+                                <span class="red-1"></span>
+                                <span class="red-2"></span>
+                                <p class="us">WELFARE</p>
+                                <p class="cia">优惠福利</p>
+                        </div>
+                        <div class="head-2">
+                            <div class="head-2-1">
+                               
+                                
+                               
+                                
+                                    <div class="head-2-1-1">
+                                        
+                                    </div>
+                                    <div class="head-2-1-2">
+                                        <p class="gqth">国庆特惠</p>
+                                        <p class="gqmoney">7228元/套</p>
+                                    </div>
+                                   
+                            </div>
+                            
+                            <div class="head-2-2">
+                                <div class="head-2-2-1"></div>
+                                <div class="head-2-2-2">
+                                    <p class="gqth">闺蜜套餐</p>
+                                    <p class="gqmoney">6250元/套</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="head-3">
+                            <div class="head-3-1">
+                               
+                                
+                               
+                                
+                                    <div class="head-3-1-1">
+                                        
+                                    </div>
+                                    <div class="head-3-1-2">
+                                        <p class="gqth">情侣特惠</p>
+                                        <p class="gqmoney">5520元/套</p>
+                                    </div>
+                                   
+                            </div>
+                            
+                            <div class="head-3-2">
+                                <div class="head-3-2-1 active"></div>
+                                <div class="head-3-2-2 active">
+                                    <p class="gqth active">个人福利</p>
+                                    <p class="gqmoney active">3230元/套</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="body">
+                <div class="body-c">
+                    
+                        
+                        <div class="body-c-1">
+                                <span class="red-1"></span>
+                                <span class="red-2"></span>
+                                <p class="us">About us</p>
+                                <p class="cia">关于我们</p>
+                       
+                        </div>
+                        <div class="logo"></div>
+                        <div class="four">
+                            <div class="text">
+                                <div class="text-item">
+                                    <p>2014 年 成 立 于 郑 州，是 郑 州 知 名 一 线 品 牌 旅 拍 摄 影 工 作</p>
+                                </div>
+                                <div class="text-item">
+                                    <p>作 品 多 次 被 今 日 人 像和 人 像 摄 影  等 知 名 行 内 杂 志 推 荐</p>
+                                </div>
+                                <div class="text-item">
+                                    <p>我 们 的 拍 摄 方 式 更 像 是 一 天 旅 行，风 景 与 光 影，只是 为 了 见证 情 感</p>
+                                </div>
+                                <div class="text-item zero">
+                                    <p>时 尚 会 消 逝，影 像 会 长 存，我 们 让 每 一 张 照 片
+                                        充 满 幸 福 的 温 度。</p>
+                                </div>
+                            </div>
+                            <div class="camera"></div>
+                            <div class="nature"></div>
+                            <div class="world"></div>
+                            <div class="prize"></div>
+                        </div>
+                </div>
+                
+            </div>
+            
+            <div class="foot">
+                <div class="foot-c">
+                    
+                        
+                        <div class="foot-c-1">
+                            <span class="red-1"></span>
+                            <span class="red-2"></span>
+                            <p class="us">Medical  equipment</p>
+                            <p class="cia">约拍流程</p>
+                   
+                    
+                    </div>
+                    <div class="water">
+                        <div class="water-item left">1</div>
+                        <div class="water-item">2</div>
+                        <div class="water-item">3</div>
+                        <div class="water-item">4</div>
+                        <div class="water-item">5</div>
+                    </div>
+                    <div class="box">
+                            <div class="box-item left">
+                                <div class="sanjiao"></div>
+                                <p class="one1">前期沟通</p>
+                                <p class="one2">确定时间地点及相关事项</p>
+                            </div>
+                            <div class="box-item">
+                                    <div class="sanjiao"></div>
+                                <p class="two1">签约拍摄</p>
+                                <p class="two2">签订拍摄协议，预付
+                                        30%款项</p>
+                            </div>
+                            <div class="box-item">
+                                    <div class="sanjiao"></div>
+                                <p class="three1">拍摄</p>
+                                <p class="three2">指派摄影师拍摄，拍摄
+                                        完毕后支付4%款项</p>
+                            </div>
+                            <div class="box-item">
+                                    <div class="sanjiao"></div>
+                                <p class="four1">选片</p>
+                                <p class="four2">客户挑选拍摄的原片，
+                                        支付剩余30%款项</p>
+                            </div>
+                            <div class="box-item right">
+                                    <div class="sanjiao"></div>
+                                <p class="five1">精修返图</p>
+                                <p class="five2">后期精修挑选的原片，
+                                        交付图片</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+                <div class="footer-c">
+                    <div class="left">
+                        <p>郑州镜界摄影服务工作室</p>
+                        <ul class="nav">
+                            <li class="nav-item three"><a href=""><img src="../img/weibo11.png" alt=""></a></li>
+                            <li class="nav-item"><a href=""><img src="../img/qq11.png" alt=""></a></li>
+                            <li class="nav-item"><a href=""><img src="../img/weixin11.png" alt=""></a></li>
+                            <li class="nav-item"><a href=""><img src="../img/baidu11.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <p>地址：郑州市郑东新区绿地中心6号楼</p>
+                        <p>服务热线：037-7981788</p>
+                        <p>邮编：456333</p>
+                    </div>
+                    <div class="right">
+                        <p>手机：18236988754</p>
+                        <p>邮箱：912754544@qq.com</p>
+                        <p>Q Q：912754544</p>
+                    </div>
+                </div>
+            </div>
+            <div class="last">
+                <p>Copyright ©2010 ls1001.com, All rights reserved. 镜界传媒艺术有限公司 豫ICP备11028596号</p>
+            </div>
+</body>
+</html>
